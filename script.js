@@ -20,7 +20,7 @@ updateHeader();
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if (!prefersReducedMotion && 'IntersectionObserver' in window) {
   const revealItems = document.querySelectorAll(
-    '.service-card, .tool-logo, .audience-group, .price-card, .about-photo, .about-copy'
+    '.service-card, .tool-logo, .audience-routes a, .audience-group, .method-grid article, .price-card, .about-photo, .about-copy'
   );
   revealItems.forEach(item => {
     item.classList.add('reveal');
